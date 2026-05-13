@@ -1,8 +1,10 @@
 package com.vut.calculator;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 /**
  * Unit tests for the GradeCalculator class.
@@ -21,6 +23,7 @@ import static org.junit.Assert.*;
  * DO NOT modify the expected values in the tests — the tests are CORRECT.
  * The bugs are in GradeCalculator.java.
  */
+
 public class GradeCalculatorTest {
 
     private GradeCalculator calculator;
@@ -290,3 +293,5 @@ public class GradeCalculatorTest {
         assertFalse(calculator.isValidMark(105));
     }
 }
+
+

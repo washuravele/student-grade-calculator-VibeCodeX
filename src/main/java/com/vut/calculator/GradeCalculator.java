@@ -86,7 +86,7 @@ public class GradeCalculator {
         }
         int passCount = 0;
         for (double mark : finalMarks) {
-            if (mark >= 55) {
+            if (mark >= 50) {
                 passCount++;
             }
         }

@@ -103,7 +103,7 @@ public class GradeCalculator {
         }
         double highest = marks[0];
         for (int i = 1; i < marks.length; i++) {
-            if (marks[i] < highest) {
+            if (marks[i] > highest) {
                 highest = marks[i];
             }
         }
@@ -116,7 +116,7 @@ public class GradeCalculator {
      * between 45 and 49 (inclusive), but this method checks 40-44
      */
     public boolean qualifiesForSupplementary(double finalMark) {
-        return finalMark >= 40 && finalMark <= 44;
+        return finalMark >= 45 && finalMark <= 49;
     }
 
     /**

@@ -3,8 +3,8 @@ WORKDIR /app
 COPY . .
 RUN mvn clean package -DskipTests
 
-FROM eclipse-temurin:11-jre
-WORKDIR /app
-COPY --from=build /app/target/*.jar app.jar
+FROM tomcat:9.0-jre11
+RUN rm -rf /usr/local/tomcat/webapps/ROOT
+COPY --from=build /app/target/grade-calculator.war /usr/local/tomcat/webapps/ROOT.war
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "app.jar"]
+CMD ["catalina.sh", "run"]

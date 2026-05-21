@@ -23,6 +23,7 @@ import org.junit.Test;
  * DO NOT modify the expected values in the tests — the tests are CORRECT.
  * The bugs are in GradeCalculator.java.
  */
+/*methods*/
 
 public class GradeCalculatorTest {
 
